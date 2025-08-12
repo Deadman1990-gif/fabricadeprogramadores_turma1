@@ -1,48 +1,31 @@
-def while1():
+def tabuada():
+    n = int(input("digite um numero:"))
+    fim=int(input("digite o final:"))
     x=1
-    while x<=3:
-     print(x)
-     x=x+1  
-print("-----x-----")
-#while1()
-
-def while2():
-   x=1
-   while x<=100:
-      print(x)
-      x=x+1
-#while2()
-
-def while3():
-   x=50
-   while x<=100:
-      print(x)
-      x=x+1
-#while3()
-
-def while4():
-    x=10
-    while x>=1:
-        print(x)
-        x=x-1
-    print('Fogo')
-#while4()
-   
-def numerospares():
-   fim=int(input("Digite o ultimo numero a imprimir"))
-   x=0
-   while x <=fim:
-      if x % 2 == 0:
-         print(x)
-      x = x+1
-#numerospares() 
-
-
-def numerosimpares():
-   fim=int(input("digite o ultimo numero a imprimir"))
-   x=1
-   while x <=fim:
-      if x % 2 == 1:
-         print(x)
-      x = x+1
-numerosimpares()  
+    while x <= fim:
+        print(n, "x", "x", "=", x*n)
+    x=x+1
+print("-----------x-----------")
+def whilebreak():
+    s=0
+    while True:
+        v=int(input("digite um numero a somar ou 0 para sair:"))
+        if v==0:
+            break
+        s=s+v
+    print(s)
+#whilebreak()
+print("---------x----------")
+def whilecomlista():
+    l=[]
+    while True:
+        n=(input("digite uma palavra(0 sai):"))
+        if n=="0":
+            break
+        l.append(n)
+    x=0
+    while x < len(l):
+        print(l[x])
+        x=x+1
+    print(l)
+whilecomlista()
